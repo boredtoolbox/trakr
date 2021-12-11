@@ -27,4 +27,10 @@ create table trakr_config (
 	year_income_table varchar(255),
 	status varchar(255)
 );
+
+CREATE USER 'trakr'@'localhost' IDENTIFIED BY '';
+
+grant create, alter, insert, update, delete, select, references, reload on *.* 
+to 'trakr'@l'ocalhost' with grant option;
+
 ```
