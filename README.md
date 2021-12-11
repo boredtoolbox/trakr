@@ -21,4 +21,10 @@ CREATE TABLE expense_category (
     category varchar(255)
 );
 
+create table trakr_config (
+	year int not null,
+	year_expense_table varchar(255),
+	year_income_table varchar(255),
+	status varchar(255)
+);
 ```
